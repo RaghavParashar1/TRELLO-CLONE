@@ -6,7 +6,7 @@ import Typography from '@material-ui/core/Typography';
 const Trellocard = () => {
     return (
         <Card>
-        <Typography gutterBottom style = {style.container}>
+        <Typography gutterBottom>
           Word of the Day
         </Typography>
     </Card>
