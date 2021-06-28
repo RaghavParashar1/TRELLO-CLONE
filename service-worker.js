@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/trello-clone/precache-manifest.d154ded3ac7f669930d588b952837529.js"
+  "/TRELLO-CLONE/precache-manifest.5370fe5fcb5337a36b1a5539e7afdf07.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/trello-clone/index.html", {
+workbox.routing.registerNavigationRoute("/TRELLO-CLONE/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
