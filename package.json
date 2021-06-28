@@ -1,8 +1,8 @@
 {
-  "homepage": "http://selfdevtv.github.io/trello-clone",
+  "homepage": "https://raghavparashar1.github.io/TRELLO-CLONE/",
   "name": "trello-clone",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@material-ui/core": "^3.9.2",
     "@material-ui/icons": "^3.0.2",
@@ -27,8 +27,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "npm run build && gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"

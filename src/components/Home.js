@@ -13,6 +13,7 @@ const Thumbnails = styled.div`
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  font-family: 'Open Sans', sans-serif;
 `;
 
 const HomeContainer = styled.div`
@@ -23,24 +24,37 @@ const HomeContainer = styled.div`
 `;
 
 const CreateTitle = styled.h3`
-  font-size: 48px;
+  font-size: 2rem;
   color: black;
   font-weight: bold;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Open Sans', sans-serif;
 `;
 
 const CreateInput = styled.input`
   width: 400px;
-  height: 80px;
-  font-size: 22px;
-  padding: 10px;
+  height: auto;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  padding: 15px;
+  // padding-left: 15px;
+  // padding-right: 15px;
   box-sizing: border-box;
   border-radius: 15px;
-  border: 1px;
-  border-color: black;
-  outline-color: blue;
-  box-shadow: 30px 20px 70px grey;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  // border-color: black;
+  outline: none;
+  box-shadow: 20px 20px 40px rgba(128,128,128,0.5);
   align-self: center;
+  transition: 0.5s ease-in-out;
+  ${CreateInput}:hover & {
+    display: block;
+    cursor: pointer;
+  }
+  &:focus {
+    // opacity: 0.8;
+    border: 2px solid rgba(80, 200, 250, 0.69);
+    transition: 0.5s ease-in-out;
+  }
 `;
 
 const Home = ({ boards, boardOrder, dispatch }) => {
